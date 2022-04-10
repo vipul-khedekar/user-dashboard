@@ -40,6 +40,28 @@ body {
     color: #fbfbfe;
 }
 
+.left-panel-places-container {
+    margin-top: 0.8rem;
+}
+
+.places-container,
+.control-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+.places-name,
+.control-name {
+    font-family: var(--poppins-font);
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fbfbfe;
+}
+
 .top-panel-container {
     background-color: green;
     grid-column-start: 2;
