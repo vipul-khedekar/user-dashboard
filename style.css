@@ -1,4 +1,6 @@
 :root {
+    --poppins-font: 'Poppins', sans-serif;
+    --ptsans-font: 'PT Sans Narrow', sans-serif;
 }
 
 body {
@@ -12,9 +14,30 @@ body {
 }
 
 .left-panel-container {
-    background-color: blue;
+    background-color: #1992d4;
+    display: grid;
+    grid-template-rows: 10vh 1fr 1fr;
     grid-row-start: 1;
     grid-row-end: -1;
+}
+
+.left-panel-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem;
+}
+
+.logo-img {
+    height: auto;
+    width: 3rem;
+}
+
+.logo-name {
+    font-family: var(--ptsans-font);
+    font-size: 2rem;
+    color: #fbfbfe;
 }
 
 .top-panel-container {
