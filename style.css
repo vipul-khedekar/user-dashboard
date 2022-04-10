@@ -1,0 +1,36 @@
+:root {
+}
+
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(12rem, 20vh) auto;
+    grid-template-rows: 10vh 20vh auto;
+    height: 100vh;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.left-panel-container {
+    background-color: blue;
+    grid-row-start: 1;
+    grid-row-end: -1;
+}
+
+.top-panel-container {
+    background-color: green;
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+.action-panel-container {
+    background-color: yellow;
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+.info-panel-container {
+    background-color: orange;
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
