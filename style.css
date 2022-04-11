@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: minmax(12rem, 15vw) auto;
-    grid-template-rows: 8vh 20vh auto;
+    grid-template-rows: 8vh 12vh auto;
     height: 100vh;
     padding: 0rem;
     margin: 0rem;
@@ -120,9 +120,53 @@ body {
 }
 
 .action-panel-container {
-    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     grid-column-start: 2;
     grid-column-end: -1;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: black;
+}
+
+.name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-picture-big > img {
+    background-color: #e9e9ed;
+    height: 4.5rem;
+    width: 4.5rem;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.name-item > p:nth-child(2) {
+    margin-top: -1rem;
+    font-size: 1.3rem;
+}
+
+.action-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-container > button {
+    background-color: #1992d4;
+    height: 2rem;
+    width: 4rem;
+    border: none;
+    border-radius: 45px;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.action-container > button:hover {
+    background-color: #4b4bf7;
 }
 
 .info-panel-container {
