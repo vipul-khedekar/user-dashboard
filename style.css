@@ -63,9 +63,41 @@ body {
 }
 
 .top-panel-container {
-    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     grid-column-start: 2;
     grid-column-end: -1;
+    background-color: #ffffff;
+    padding: 1.5rem;
+}
+
+#search-bar {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-icon {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+}
+
+.search-icon:hover {
+    background-color: #e9e9ed;
+}
+
+.search-icon img {
+    height: 1.5rem;
+    padding: 3px;
+}
+
+.search-input {
+    background-color: #e2e8f0;
+    width: 16rem;
+    padding-left: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
 }
 
 .action-panel-container {
