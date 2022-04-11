@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: minmax(12rem, 15vw) auto;
-    grid-template-rows: 10vh 20vh auto;
+    grid-template-rows: 8vh 20vh auto;
     height: 100vh;
     padding: 0rem;
     margin: 0rem;
