@@ -170,7 +170,33 @@ body {
 }
 
 .info-panel-container {
-    background-color: orange;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-start: 2;
     grid-column-end: -1;
+    background-color: #e2e8f0;
+}
+
+.info-area-container {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.announcements-container {
+    grid-column-start: 9;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: green;
+}
+
+.trending-container {
+    grid-column-start: 9;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    background-color: blue;
 }
