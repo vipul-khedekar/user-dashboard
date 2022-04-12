@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: minmax(12rem, 15vw) auto;
-    grid-template-rows: 8vh 12vh auto;
+    grid-template-rows: 8vh 12vh calc(100vh - (8vh + 12vh));
     height: 100vh;
     padding: 0rem;
     margin: 0rem;
@@ -181,9 +181,40 @@ body {
 
 .info-area-container {
     grid-column-start: 1;
-    grid-column-end: 9;
+    grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 3;
+    margin: 0rem 1rem;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    height: 66vh;
+    overflow-y: scroll;
+    scrollbar-width: none;      /*Hidden Scrollbar while keeping scrolling enabled*/
+    margin-top: -1rem;
+}
+
+.i {
+    background-color: #ffffff;
+    height: 9rem;
+    width: 24rem;
+    padding: 0.5rem;
+    border: 1px solid #939496;
+    border-left: 0.5rem solid #e9d590;
+    border-radius: 0.5rem;
+}
+
+.i > p:nth-child(1) {
+    font-size: 1.2rem;
+}
+
+.i > p:nth-child(2) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .announcements-container {
