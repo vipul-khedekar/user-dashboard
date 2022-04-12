@@ -217,9 +217,34 @@ body {
 }
 
 .trending-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     grid-column-start: 9;
     grid-column-end: -1;
     grid-row-start: 2;
     grid-row-end: -1;
-    background-color: blue;
+    background-color: #e2e8f0;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    padding: 5px;
+    margin-top: -1rem;
+    margin-right: 1rem;
+    border: 1px solid #939496;
+    border-radius: 0.5rem;
+}
+
+.t1 > p:nth-child(2),
+.t2 > p:nth-child(2),
+.t3 > p:nth-child(2),
+.t4 > p:nth-child(2) {
+    margin-top: -0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7rem;
 }
