@@ -172,8 +172,8 @@ body {
 .info-panel-container {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(2, 1fr) repeat(2, 5vh);
     grid-column-start: 2;
     grid-column-end: -1;
     background-color: #e2e8f0;
@@ -191,7 +191,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    grid-column-start: 9;
+    grid-column-start: 11;
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -203,6 +203,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     background-color: #ffffff;
+    width: 18vw;
     padding: 5px;
     margin-top: -1rem;
     margin-right: 1rem;
@@ -221,7 +222,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    grid-column-start: 9;
+    grid-column-start: 11;
     grid-column-end: -1;
     grid-row-start: 2;
     grid-row-end: -1;
@@ -233,6 +234,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     background-color: #ffffff;
+    width: 18vw;
     padding: 5px;
     margin-top: -1rem;
     margin-right: 1rem;
